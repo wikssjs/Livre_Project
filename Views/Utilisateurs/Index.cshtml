@@ -1,0 +1,26 @@
+﻿@model IList<Utilisateur> 
+
+<div class="mt-5 w-100">
+       <h1 class="text-center">Utilisateurs</h1>
+        <table class="table user-table w-100">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+              </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+            {
+                    <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Email</td>
+                    <td>@item.Password</td>
+                  </tr>
+            }
+              
+            </tbody>
+          </table>
+    </div>

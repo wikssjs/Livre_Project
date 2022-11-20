@@ -1,23 +1,24 @@
 ﻿using Livre_Project.Data;
+using Livre_Project.Data.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Livre_Project.Controllers
 {
     public class LivresController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly ILivresService _service;
 
 
-        public LivresController(AppDbContext context)
+        public LivresController(ILivresService service)
         {
-            _context = context;
+            _service = service;
         }
 
 
         public IActionResult Index()
         {
-            var AllLivres = _context.Livres.ToList();
-            return View();
+            var AllLivres = _service.getAll();
+            return View(AllLivres);
         }
     }
 }
