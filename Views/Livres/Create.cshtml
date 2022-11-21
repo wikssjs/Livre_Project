@@ -1,0 +1,58 @@
+﻿@model Livre
+
+@{
+    ViewData["Title"] = "Ajouter un nouveau livre";
+}
+
+<h1 class="text-center">Ajouter Un Nouveau Livre</h1>
+
+<div class="w-50 m-auto">
+<form asp-action="Create">
+
+   <div class="mb-3 text-center">
+    <img id="livre-url-viewer" style="max-width:150px;"/>
+  </div>
+  <div class="mb-3">
+    <label asp-for="ImgUrl" class="form-label">Image Url</label>
+    <input asp-for="ImgUrl" type="url" class="form-control" id="ImgUrl" aria-describedby="emailHelp">
+    <span asp-validation-for="ImgUrl" class="text-danger"></span>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Titre" for="exampleInputPassword1" class="form-label">Titre</label>
+    <input asp-for="Titre" type="text" class="form-control" id="exampleInputPassword1">
+    <span asp-validation-for="Titre" class="text-danger"></span>
+
+  </div>
+
+   <div class="mb-3">
+    <label asp-for="Auteur" class="form-label">Auteur</label>
+    <input asp-for="Auteur" type="text" class="form-control" id="exampleInputPassword1">
+        <span asp-validation-for="Auteur" class="text-danger"></span>
+
+  </div>
+
+   <div class="mb-3">
+    <label asp-for="Description" class="form-label">Description</label>
+    <textarea asp-for="Description" type="text" class="form-control" id="exampleInputPassword1"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+
+  </div>
+
+ <div class="mb-3">
+    <input type="submit" value="Creer" class="btn btn-success" id="exampleInputPassword1">
+    <a class="btn btn-secondary" asp-action="Index">Show All </a>
+  </div>
+
+  </form>
+</div>
+
+
+
+@section Scripts{
+    <script>
+            $("#ImgUrl").change(function(){
+            var output = document.getElementById('livre-url-viewer');
+            output.src = $(this).val();
+        })
+    </script>
+}

@@ -1,0 +1,32 @@
+﻿@model List<Livre>
+
+<table class="table table-striped-columns table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Titre</th>
+      <th scope="col">Auteur</th>
+      <th scope="col">Description</th>
+      <th scope="col" colspan="3">Actions</th>
+
+    </tr>
+  </thead>
+  <tbody>
+        @foreach (var item in Model)
+            {
+       <tr>
+          <th scope="row">1</th>
+          <td><img src="@item.ImgUrl" style="max-width:150px;"/></td>
+          <td>@item.Titre</td>
+          <td>@item.Auteur</td>
+          <td>@item.Description</td>
+          <td><button class="btn btn-outline-info"><i class="bi bi-pencil-square"></i>  Edit</button></td>
+          <td><button class="btn btn-danger"><i class="bi bi-trash"></i>  Supprimer</button></td>
+     </tr>
+            }
+    
+  </tbody>
+</table>
+
+<a asp-controller="Livres" asp-action="Create"  class="btn btn-success fixed-bottom ms-auto m-5" style="max-width:100px;"><i class="bi bi-plus-circle"></i>  Ajouter</a>

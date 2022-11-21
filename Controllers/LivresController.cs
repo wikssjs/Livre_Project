@@ -20,5 +20,16 @@ namespace Livre_Project.Controllers
             var AllLivres = _service.getAll();
             return View(AllLivres);
         }
+
+        public IActionResult Admin()
+        {
+            var AllLivres = _service.getAll();
+            return View(AllLivres);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

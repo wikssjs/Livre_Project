@@ -24,7 +24,12 @@ nav {
     background-color: #282A3A;
 }
 
+.navbar-brand{
+    font-size:25px;
+}
+
 a{
+    font-size:22px;
     font-family:'Sitka Display'
 }
 

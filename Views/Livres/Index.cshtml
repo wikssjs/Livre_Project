@@ -1,38 +1,36 @@
 ﻿@model IList<Livre>
 
 @{
-	ViewData["Title"] = "Liste de Livre";
+    ViewData["Title"] = "Liste de Livre";
 }
 
 <div class="container mt-5">
         <div class="row">
 
-            @foreach (var item in Model)
+        @foreach (var item in Model)
         {
-               <div class="col">
-                    <div class="d-flex flex-column">
-                        <h1 class="">@item.Titre</h1>
-                        <img class="rounded-3" src="@item.ImgUrl" alt="" style="max-width:150px">
+                   <div class="col">
+                        <div class="d-flex flex-column">
+                            <h1 class="">@item.Titre</h1>
+                            <img class="rounded-3" src="@item.ImgUrl" alt="" style="max-width:150px">
 
-                        <p class="">Auteur : <span>@item.Auteur</span> 
-                        </p>
+                            <p class="">Auteur : <span>@item.Auteur</span> 
+                            </p>
 
-                        <p class="h4"> Description<span></span>
-                        </p>
+                            <p class="h4"> Description<span></span>
+                            </p>
 
-                        <p class="descrition">@item.Description</p>
+                            <p class="descrition">@item.Description</p>
 
-                        <button class="btn bg-primary mt-2" style="width: 100px;" data-id="@item.Id"><i class="bi bi-heart"></i> Favori</button>
-                          
+                            <button class="btn bg-primary mt-2" style="width: 100px;" data-id="@item.Id"><i class="bi bi-heart"></i> Favori</button>
+
+                        </div>
+
+
                     </div>
-
-
-                </div>
 
         }
 
         </div>
 
-        <button>Ajouter un nouveau</button>
     </div>
-
