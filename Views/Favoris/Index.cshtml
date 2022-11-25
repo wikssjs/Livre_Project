@@ -1,0 +1,43 @@
+﻿@model List<Livre>
+
+@{
+    ViewData["Title"] = "Favoris";
+}
+
+<div class="container mt-5">
+        <div class="row">
+
+        @foreach (var item in Model)
+        {
+                       <div class="col mt-4">
+                                <div class="d-flex flex-column justify-content-between h-100">
+                                <h1 class="">@item.Titre</h1>
+                                <img class="rounded-3" src="@item.ImgUrl" alt="" style="max-width:150px">
+
+                                <p class="">Auteur : <span>@item.Auteur</span> 
+                                </p>
+
+                                <p class="h4"> Description<span></span>
+                                </p>
+
+                                <p class="descrition">@item.Description</p>
+
+                                <form method="post" asp-action="Index">
+
+                                    <button type="submit" asp-route-id="@item.Id" asp-action="Index" class="btn bg-danger mt-2" style="width: 100px;" data-id="@item.Id">
+
+                                            <i class="bi bi-heart"></i>
+                                            Enlever
+                                </button>
+                                </form>
+
+                            </div>
+
+
+                        </div>
+
+        }
+
+        </div>
+
+    </div>

@@ -1,13 +1,13 @@
 ﻿@model Livre
 
 @{
-    ViewData["Title"] = "Ajouter un nouveau livre";
+    ViewData["Title"] = "Modifier un livre";
 }
 
-<h1 class="text-center">Ajouter Un Nouveau Livre</h1>
+<h1 class="text-center">Modifier Un Livre</h1>
 
 <div class="w-50 m-auto">
-    <form asp-action="Create">
+    <form asp-action="Edit">
         <div class="text-danger" asp-validation-summary="ModelOnly">a</div>
        <div class="mb-3 text-center">
         <img id="livre-url-viewer" style="max-width:150px;"/>
@@ -41,7 +41,7 @@
       </div>
 
      <div class="mb-3">
-        <input type="submit" value="Creer" class="btn btn-success">
+        <input type="submit" value="Modifier" class="btn btn-success">
         <a class="btn btn-secondary" asp-action="Index">Show All </a>
       </div>
 

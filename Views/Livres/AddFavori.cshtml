@@ -1,0 +1,49 @@
+﻿@model Livre_Utilisateur
+
+@{
+    ViewData["Title"] = "Modifier un livre";
+}
+
+<h1 class="text-center">Modifier Un Livre</h1>
+
+<div class="w-50 m-auto">
+    <form asp-action="Edit">
+        <div class="text-danger" asp-validation-summary="ModelOnly">a</div>
+       <div class="mb-3 text-center">
+        <img id="livre-url-viewer" style="max-width:150px;"/>
+      </div>
+      <div class="mb-3">
+        <label asp-for="LivreId" class="form-label">Image Url</label>
+        <input asp-for="LivreId" class="form-control" id="ImgUrl">
+        <span asp-validation-for="LivreId" class="text-danger"></span>
+      </div>
+
+
+      <div class="mb-3">
+        <label asp-for="UtilisateurId" class="form-label">Titre</label>
+        <input asp-for="UtilisateurId" class="form-control">
+        <span asp-validation-for="UtilisateurId" class="text-danger"></span>
+
+      </div>
+
+      
+
+      </form>
+</div>
+
+
+
+@section Scripts{
+        <script>
+
+            $(document).ready(function(){
+                       var output = document.getElementById('livre-url-viewer');
+                        output.src = $('#ImgUrl').val();  
+            })
+
+                $("#ImgUrl").change(function(){
+                var output = document.getElementById('livre-url-viewer');
+                output.src = $(this).val();
+            })
+        </script>
+}

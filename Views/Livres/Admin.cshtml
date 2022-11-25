@@ -16,13 +16,15 @@
         @foreach (var item in Model)
             {
        <tr>
-          <th scope="row">1</th>
+          <th scope="row">@item.Id</th>
           <td><img src="@item.ImgUrl" style="max-width:150px;"/></td>
           <td>@item.Titre</td>
           <td>@item.Auteur</td>
           <td>@item.Description</td>
-          <td><button class="btn btn-outline-info"><i class="bi bi-pencil-square"></i>  Edit</button></td>
-          <td><button class="btn btn-danger"><i class="bi bi-trash"></i>  Supprimer</button></td>
+          <td><a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-info"><i class="bi bi-pencil-square"></i>  Edit</a></td>
+          <td>
+                      <a asp-route-id="@item.Id" asp-action="Delete" class="btn btn-danger"><i class="bi bi-trash"></i>  Supprimer</a>
+              </td>
      </tr>
             }
     

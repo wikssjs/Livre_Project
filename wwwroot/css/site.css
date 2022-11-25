@@ -36,3 +36,11 @@ a{
 .user-table {
     background-color: #F2DEBA
 }
+
+h1{
+    font-size:30px;
+}
+
+.col {
+    margin-left:151px
+}

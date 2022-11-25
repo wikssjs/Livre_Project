@@ -21,40 +21,40 @@ namespace Livre_Project.Data
                        {
                              ImgUrl = "https://hackr.io/blog/uploads/images/clean-code-a-handbook-of-agile-software-craftsmanship-1st-edition.jpg",
                              Titre = "Clean Code",
-                             Description = "Un livre pour ecrire du code lisible",
+                             Description = "La programmation consiste à polir le métier avec des années d’essais et d’erreurs. J’aimerais qu’il y ait un moyen de vous sauver de tout le travail acharné en apprenant des erreurs des autres programmeurs? Heureusement, il existe, et il est connu dans le monde entier sous le nom de Clean Code: A Handbook of Agile Software Craftsmanship book du légendaire Oncle Bob.",
                              Auteur = "Robert C. Martin"
                        },
 
                          new Livre()
                        {
-                             ImgUrl = "https://hackr.io/blog/uploads/images/clean-code-a-handbook-of-agile-software-craftsmanship-1st-edition.jpg",
-                             Titre = "Clean Code",
-                             Description = "Un livre pour ecrire du code lisible",
-                             Auteur = "Robert C. Martin"
+                             ImgUrl = "https://hackr.io/blog/uploads/images/introduction-to-algorithms-eastern-economy-edition.jpg",
+                             Titre = "Introduction aux algorithmes",
+                             Description = "La programmation consiste à polir le métier avec des années d’essais et d’erreurs. J’aimerais qu’il y ait un moyen de vous sauver de tout le travail acharné en apprenant des erreurs des autres programmeurs? Heureusement, il existe, et il est connu dans le monde entier sous le nom de Clean Code: A Handbook of Agile Software Craftsmanship book du légendaire Oncle Bob.",
+                             Auteur = "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein"
                        },
 
                            new Livre()
                        {
                              ImgUrl = "https://hackr.io/blog/uploads/images/clean-code-a-handbook-of-agile-software-craftsmanship-1st-edition.jpg",
-                             Titre = "Clean Code",
+                             Titre = "Structure et interprétation",
                              Description = "Un livre pour ecrire du code lisible",
-                             Auteur = "Robert C. Martin"
+                             Auteur = "Harold Abelson, Gerald Jay Sussman, Julie Sussman"
                        },
 
                              new Livre()
                        {
                              ImgUrl = "https://hackr.io/blog/uploads/images/clean-code-a-handbook-of-agile-software-craftsmanship-1st-edition.jpg",
-                             Titre = "Clean Code",
-                             Description = "Un livre pour ecrire du code lisible",
+                             Titre = "The Clean Coder",
+                             Description = "Structure et interprétation des programmes d’ordinateur (SICP)",
                              Auteur = "Robert C. Martin"
                        },
 
                                new Livre()
                        {
                              ImgUrl = "https://hackr.io/blog/uploads/images/clean-code-a-handbook-of-agile-software-craftsmanship-1st-edition.jpg",
-                             Titre = "Clean Code",
-                             Description = "Un livre pour ecrire du code lisible",
-                             Auteur = "Robert C. Martin"
+                             Titre = "Code Complete",
+                             Description = "ous voulez savoir comment écrire du code robuste quelle que soit l’architecture d’un langage de programmation ? Ensuite, envisagez de lire le Code complet: Un manuel pratique de la construction logicielle. Il couvre de manière exhaustive tous les aspects de la structure d’un bon code.",
+                             Auteur = "Steve McConnell"
                         }
                    });
 

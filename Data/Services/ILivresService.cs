@@ -4,11 +4,12 @@ namespace Livre_Project.Data.Services
 {
     public interface ILivresService
     {
-        IEnumerable<Livre> getAll();
-
-        Livre GetById(int id);
-        void Add(Livre livre);
-        Livre Update(int id, Livre newLivre);
-        void Delete(int id);
+        Task<IEnumerable<Livre>> GetAllAsync();
+        Task<Livre> GetByIdAsync(int id);
+        Task AddAsync(Livre livre);
+        Task AddFavoriAsync(int id);
+        Task<Livre> UpdateAsync(int id, Livre newLivre);
+        Task DeleteAsync(int id);
+        Task<List<bool>> FavoriExist(int id);
     }
 }

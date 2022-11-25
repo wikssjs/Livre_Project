@@ -16,10 +16,10 @@ namespace LivreProject.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ImgUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Titre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Auteur = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImgUrl = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Titre = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Auteur = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false)
                 },
                 constraints: table =>
                 {
