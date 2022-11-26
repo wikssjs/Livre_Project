@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LivreProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221125223409_initial")]
+    [Migration("20221126215000_initial")]
     partial class initial
     {
         /// <inheritdoc />
