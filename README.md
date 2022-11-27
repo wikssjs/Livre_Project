@@ -12,7 +12,7 @@ This is an ASP.NET Core MVC project i am doing right about Books
 # Admin page 
 <img src="/images/admin.png">
 
-#Favoris Page
+# Favoris Page
 <img src="/images/favoris.png">
 
 
