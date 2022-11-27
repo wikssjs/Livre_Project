@@ -7,10 +7,10 @@ This is an ASP.NET Core MVC project i am doing right about Books
 <img src="/images/home.png">
 
 # Utilisateurs page
-<img src="/images/utilisateurs.png" width=30%>
+<img src="/images/utilisateurs.png">
 
 # Admin page 
-<img src="/images/admin.png" width=30%>
+<img src="/images/admin.png">
 
 #Favoris Page
 <img src="/images/favoris.png">
